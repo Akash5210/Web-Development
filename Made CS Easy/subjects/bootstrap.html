@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<style>
+		.subject{
+			border: 1px solid grey;
+			box-shadow: 0 0 10px rgba(0,0,0.2);
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		
+		<!--container-->
+		<div class="container">
+			
+			<!--container icons-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="/Made CS Easy.html" class="navbar-brand">Made CSE Easy</a>
+			</div>
+
+			<!--Navbar links-->
+			<div class="navbar-collapse collapse" id="nav1">
+				<ul class="nav navbar-nav ">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#section1">Languages <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Programming language</a>
+								<ul>
+									<li><a href="cpp.html">C++</a></li>
+									<li><a href="python.html">Python</a></li>
+									<li><a href="java.html">Java</a></li>
+									<li><a href="javascript.html">Javascript</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Web Development</a>
+								<ul>
+									<li><a href="html.html">HTML</a></li>
+									<li><a href="css.html">CSS</a></li>
+									<li><a href="bootstrap.html">Bootstrap</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</li>
+					<li><a href="os.html">Operating System</a></li>
+					<li><a href="dbms.html">DBMS</a></li>
+					<li><a href="quiz.html">Quizes</a></li>
+				</ul>
+
+				<!--for right side icon-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><form class="form-inline">
+  							<i class="fa fa-google" style="font-size:24px;padding-top:5px;"></i>
+  							<input class="form-control form-control-sm" type="text" placeholder="Google Search" style="padding-top: 5px;">
+						</form>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-print"></span> Print</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="subject">
+			<br><br>
+		<h2><b>Bootstrap Introduction</b></h2>
+			<p>
+				Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+			</p>
+			<br>
+			<h4>History of Bootstrap</h4>
+		<p>
+			Bootstrap is the seventh-most-starred project on GitHub, with more than 142,000 stars, behind freeCodeCamp (almost 312,000 stars) and marginally behind Vue.js framework.[2] According to Alexa Rank, Bootstrap is in the top-2000 in the USA while vuejs.org is in the top-7000 in the USA.
+		</p>
+			<h3>Features</h3>
+			<p>Bootstrap is a web framework that focuses on simplifying the development of informative web pages (as opposed to web apps). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers. In addition, developers can take advantage of CSS classes defined in Bootstrap to further customize the appearance of their contents. For example, Bootstrap has provisioned for light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight.<br>
+			
+			</p><br>
+
+						
+			<ul class="pager">
+				<li class="previous"><a href="#">Previous</a></li>
+				<li class="next"><a href="#">Next</a></li>
+			</ul>
+
+			<ul class="pagination"  style="position: relative;padding-left:450px ;">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+			<br>
+			<!--Bootstrap modal-->
+			
+		<!--model button-->
+		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal1">click for more</button>
+
+		<!--model-->
+		<div id="modal1" class="modal fade">
+			<div class="modal-dialog">
+				
+				<!--model content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">w3schools.com</h4>
+					</div>
+
+					<div class="modal-body">
+						<p><a href="https://www.w3schools.com/bootstrap4/">w3schools.com</a></p>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn-btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+	</div>
+</body>
+</html>

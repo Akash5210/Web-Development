@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Development quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+		h3{
+			font-family: cursive;
+			color: red;
+		}
+		#sendA{
+			margin-top: 10px;
+		}
+		#qform{
+			box-shadow: 0 0 20px rgba(0,0,0.2);
+			margin: 60px auto;
+			padding: 20px;
+			width: 80%;
+		}
+
+	</style>
+
+	<script>
+		function score()
+		{
+			var q1=document.forms.form.q1.value;
+			var q2=document.forms.form.q2.value;
+			var q3=document.forms.form.q3.value;
+			var q4=document.forms.form.q4.value;
+			var q5=document.forms.form.q5.value;
+			var q6=document.forms.form.q6.value;
+			var q7=document.forms.form.q7.value;
+			var q8=document.forms.form.q8.value;
+			var q9=document.forms.form.q9.value;
+			var q10=document.forms.form.q10.value;
+
+			var questions=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10];
+			var answers=["b","b","d","b","a","b","b","a","b","c"];
+
+			var points=0;
+			var total=10;
+
+			for (var i = 0; i < total; i++) {
+				if (questions[i]===answers[i]) {
+					points=points+1;
+				}
+			}
+
+			var q=document.getElementById('rada');
+
+			q.style.fontSize="40px";
+			q.style.textAlign="center";
+			q.innerHTML="You got "+ points + " out of " +total;
+
+			return false;
+		}
+	</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		
+		<!--container-->
+		<div class="container">
+			
+			<!--container icons-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="/Made CS Easy.html" class="navbar-brand">Made CSE Easy</a>
+			</div>
+
+			<!--Navbar links-->
+			<div class="navbar-collapse collapse" id="nav1">
+				<ul class="nav navbar-nav ">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#section1">Languages <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Programming language</a>
+								<ul>
+									<li><a href="cpp.html">C++</a></li>
+									<li><a href="python.html">Python</a></li>
+									<li><a href="java.html">Java</a></li>
+									<li><a href="javascript.html">Javascript</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Web Development</a>
+								<ul>
+									<li><a href="html.html">HTML</a></li>
+									<li><a href="css.html">CSS</a></li>
+									<li><a href="bootstrap.html">Bootstrap</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</li>
+					<li><a href="os.html">Operating System</a></li>
+					<li><a href="dbms.html">DBMS</a></li>
+					
+				</ul>
+
+				<!--for right side icon-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><form class="form-inline">
+						<i class="fa fa-google" style="font-size:24px;padding-top:5px;"></i>
+						<input class="form-control form-control-sm" type="text" placeholder="Google Search" style="padding-top: 5px;">
+					</form>
+				</li>
+				<li><a href="#"><span class="glyphicon glyphicon-print"></span> Print</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	
+
+	<div class="container">
+		<form name="form" onsubmit="return score()" id="qform">
+		
+		<h3>1. All elements are identified by their __________ and are marked up using either start tags and end tags or self-closing tags.</h3>
+		<input type="radio" name="q1" value="a">a. attribute name<br>
+		<input type="radio" name="q1" value="b">b. tag name<br>
+		<input type="radio" name="q1" value="c">c. class name<br>
+		<input type="radio" name="q1" value="d">d. none of the mentioned<br>
+
+		<h3>2. The __________ element represents a span of text that is isolated from its surroundings for the purposes of bidirectional text formatting.</h3>
+		<input type="radio" name="q2" value="a">a. b<br>
+		<input type="radio" name="q2" value="b">b. bdi<br>
+		<input type="radio" name="q2" value="c">c. bdo<br>
+		<input type="radio" name="q2" value="d">d. base<br>
+
+		<h3>3. The interactive element audio with the attribute controls must not appear as a descendant of which element?</h3>
+		<input type="radio" name="q3" value="a">a. a<br>
+		<input type="radio" name="q3" value="b">b. button<br>
+		<input type="radio" name="q3" value="c">c. audio<br>
+		<input type="radio" name="q3" value="d">d. both a and button<br>
+
+		<h3>4.  A ____________ element must have a start tag but must not have an end tag.</h3>
+		<input type="radio" name="q4" value="a">a. details<br>
+		<input type="radio" name="q4" value="b">b. command<br>
+		<input type="radio" name="q4" value="c">c. code<br>
+		<input type="radio" name="q4" value="d">d. both details and command<br>
+
+		<h3>5. Which type attribute of input element sets the element’s value to a string representing a number?</h3>
+		<input type="radio" name="q5" value="a">a. range<br>
+		<input type="radio" name="q5" value="b">b. email<br>
+		<input type="radio" name="q5" value="c">c. file<br>
+		<input type="radio" name="q5" value="d">d. date<br>
+
+		<h3>6. Which of the following type attributes of input element defines control for entering a telephone number?</h3>
+		<input type="radio" name="q6" value="a">a. mob<br>
+		<input type="radio" name="q6" value="b">b. tel<br>
+		<input type="radio" name="q6" value="c">c. mobile<br>
+		<input type="radio" name="q6" value="d">d. telephone<br>
+
+		<h3>7. Which element represents a control for generating a public-private key pair?</h3>
+		<input type="radio" name="q7" value="a">a. ins<br>
+		<input type="radio" name="q7" value="b">b. keygen<br>
+		<input type="radio" name="q7" value="c">c. key<br>
+		<input type="radio" name="q7" value="d">d. command<br>
+
+		<h3>8. The World Wide Web’s markup language has always been HTML.</h3>
+		<input type="radio" name="q8" value="a">a. True<br>
+		<input type="radio" name="q8" value="b">b. False<br>
+		<input type="radio" name="q8" value="c">c. both<br>
+		<input type="radio" name="q8" value="d">d. none<br>
+
+		<h3>9.  Which element represents marked or highlighted text for reference purposes?</h3>
+		<input type="radio" name="q9" value="a">a. shimla<br>
+		<input type="radio" name="q9" value="b">b. Lucknow<br>
+		<input type="radio" name="q9" value="c">c. delhi<br>
+		<input type="radio" name="q9" value="d">d. Bihar<br>
+
+		<h3>10. Which element(s) represents a section of a document that links to other documents?</h3>
+		<input type="radio" name="q10" value="a">a. navigation<br>
+		<input type="radio" name="q10" value="b">b. anchor tagnav<br>
+		<input type="radio" name="q10" value="c">c. nav<br>
+		<input type="radio" name="q10" value="d">d. option<br>
+		
+
+		<input type="submit" id="sendA" class="btn btn-success" value="Correct">
+		<br>
+		<p id="rada"></p>
+	</form>
+
+	</div>	
+</body>
+</html>

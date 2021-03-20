@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Made CS Easy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		/* form code not in use 
+		#reg-page{
+			position: absolute;
+			width: 300px;
+			padding: 20px;
+			left: 900px;
+			top: 20px;
+			box-shadow:0 0 20px rgba(0,0,0.2); 
+			border-radius: 10px;
+			background-image: url(7_images/01.jpg);
+		}
+		*/
+		#qbtn{
+			position: absolute;
+			width: 300px;
+			padding: 20px;
+			left: 900px;
+			top: 20px;
+			box-shadow:0 0 20px rgba(0,0,0.2); 
+			border-radius: 10px;
+			background-image: url(7_images/01.jpg);
+		}
+		.carousel-inner > .item > img {
+			width: 70%;
+			margin: auto;
+		}
+		.carousel{	
+			border: 0.5px solid green;
+			box-shadow: 0 0 20px rgba(0,0,0.2);
+			border-radius: 5px;
+			margin: 70px 0px 100px 80px;
+			width: 50%;
+		}
+		#intro{
+			border: 1px solid black;
+			background-color: white;
+			padding-left:40px;
+			padding-right40px;
+			padding-top:50px;
+			border-radius:5px;
+
+		}
+		body{
+			background-image: url(7_images/03.jpg);
+		}
+		.container{
+			max-width: 90%;
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		
+		<!--container-->
+		<div class="container">
+			
+			<!--container icons-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Made CSE Easy</a>
+			</div>
+
+			<!--Navbar links-->
+			<div class="navbar-collapse collapse" id="nav1">
+				<ul class="nav navbar-nav ">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#section1">Languages <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Programming language</a>
+								<ul>
+									<li><a href="subjects/cpp.html">C++</a></li>
+									<li><a href="subjects/python.html">Python</a></li>
+									<li><a href="subjects/java.html">Java</a></li>
+									<li><a href="subjects/javascript.html">Javascript</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Web Development</a>
+								<ul>
+									<li><a href="subjects/html.html">HTML</a></li>
+									<li><a href="subjects/css.html">CSS</a></li>
+									<li><a href="subjects/bootstrap.html">Bootstrap</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</li>
+					<li><a href="subjects/os.html">Operating System</a></li>
+					<li><a href="subjects/dbms.html">DBMS</a></li>
+					
+				</ul>
+
+				<!--for right side icon-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><form class="form-inline">
+  							<i class="fa fa-google" style="font-size:24px;padding-top:5px;"></i>
+  							<input class="form-control form-control-sm" type="text" placeholder="Google Search" style="padding-top: 5px;">
+						</form>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-print"></span> Print</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--carousel-->
+	<div>
+	<div id="carousel-home">
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+			
+			<!--Carousel Indicator-->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+				<li data-target="#carousel" data-slide-to="3"></li>
+			</ol>
+
+			<!--wrapper for slide-->
+			<div class="carousel-inner" role="listbox">
+				
+				<div class="item active">
+					<img src="7_images/1.jpg">
+					<div class="carousel-caption">
+						<h2>Quizes</h2>
+						<p></p>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="7_images/2.jpg">
+					<div class="carousel-caption">
+						<h2>Python Web</h2>
+						<p></p>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="7_images/3.jpg" >
+					<div class="carousel-caption">
+						<h2>Programming</h2>
+						<p></p>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="7_images/4.jpg" >
+					<div class="carousel-caption">
+						<h2>Frameworks</h2>
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+
+			<!--Left and right control slide-->
+			<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			</a>
+
+			<!--login form not in use-->
+				<!--
+					<div class="container-fluid">
+		<form role="form" id="reg-page">
+			<br>
+			<div class="form-group">
+				<input type="email" class="form-control" name="email" placeholder="Enter address">
+			</div>
+
+			<div class="form-group">
+				<input type="password" class="form-control" name="pass" placeholder="Password">
+			</div>
+
+			<a href="#login" class="btn btn-primary btn-block">Log In</a>
+			<hr>
+			<a href="#createaccount" class="btn btn-success btn-block">Create New Account</a>
+		</form>	
+	</div>
+			-->
+
+			<div class="container-fluid" id="qbtn">
+				<h2 style="text-align: center;font-size: 35px;color: red;">Quizzes</h2>
+				<ul style="font-size: 17px;">
+					<li><a href="subjects/cppquiz.html">C++</a></li>
+					<li><a href="subjects/pythonquiz.html">Python</a></li>
+					<li><a href="subjects/javaquiz.html">Java</a></li>
+					<li><a href="subjects/jsquiz.html">Javascript</a></li>
+					<li><a href="subjects/osquiz.html">Operating System</a></li>
+					<li><a href="subjects/dbmsquiz.html">DBMS</a></li>
+					<li><a href="subjects/webquiz.html">Web Development</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+</div>
+	
+
+	<!--Introduction of CSE-->
+	<hr>
+	<div class="container" id="intro">
+		<h2>Programming language</h2>
+		<div>
+			<h3><b>C++</b></h3>
+			<p>C++ is a general purpose programming language and widely used now a days for competitive programming. It has imperative, object-oriented and generic programming features. C++ runs on lots of platform like Windows, Linux, Unix, Mac etc.</p><br>
+
+			<p><h4>About C++ Programming</h4><ul></ul>
+				<li><b>Multi-paradigm Language -</b> C++ supports at least seven different styles of programming. Developers can choose any of the styles.</li>
+				<li><b>General Purpose Language -</b> You can use C++ to develop games, desktop apps, operating systems, and so on.</li>
+				<li><b>Speed -</b> Like C programming, the performance of optimized C++ code is exceptional.</li>
+				<li><b>Object-oriented -</b> C++ allows you to divide complex problems into smaller sets by using objects.</li>
+			</p>
+
+			<p><h4>Why Learn C++?</h4><ul></ul>
+				<li>C++ is used to develop games, desktop apps, operating systems, browsers, and so on because of its performance.</li>
+				<li>After learning C++, it will be much easier to learn other programming languages like Java, Python, etc.</li>
+				<li>C++ helps you to understand the internal architecture of a computer, how computer stores and retrieves information.</li>
+			</p>
+			<a href="subjects/cpp.html">click for more</a>
+
+			<hr>
+			<h3><b>Python</b></h3>
+			<p>Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on Python programming language.</p><br>
+		</div>
+		<p><h4>About Python Programming</h4><ul></ul>
+			<li><b>Easy-to-learn −</b> Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.</li>
+			<li><b>Portable -</b> Python can run on a wide variety of hardware platforms and has the same interface on all platforms.</li>
+			<li><b>Databases  -</b>Python provides interfaces to all major commercial databases.</li>
+			<li><b>GUI Programming −</b> Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.</li>
+		</p>
+
+		<p><h4>Why Learn Python?</h4><ul></ul>
+			<li>It supports functional and structured programming methods as well as OOP.</li>
+			<li>It can be used as a scripting language or can be compiled to byte-code for building large applications.</li>
+			<li>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+		</p>
+		<a href="subjects/python.html">click for more</a>
+
+		<hr>
+		<h3><b>Java</b></h3>
+		<p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+
+			Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the Oak name to Java.
+		</p><br>
+
+		<p><h4>About Java Programming</h4><ul></ul>
+			<li><b>Object Oriented −</b>In Java, everything is an Object. Java can be easily extended since it is based on the Object model.</li>
+			<li><b>Platform Independent −</b> Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.</li>
+			<li><b>Secure −</b>With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.</li>
+			<li><b>Portable −</b> Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.</li>
+		</p>
+
+		<p><h4>Why Learn Java?</h4>
+			<p>According to Sun, 3 billion devices run Java. There are many devices where Java is currently used. Some of them are as follows:</p><ul>
+				<li>It supports functional and structured programming methods as well as OOP.</li>
+				<li>It can be used as a scripting language or can be compiled to byte-code for building large applications.</li>
+				<li>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+			</ul>
+		</p>
+		<a href="subjects/java.html">click for more</a>
+
+		<hr>
+		<h3><b>Web development</b></h3>
+		<p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+		</p><br>
+
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-success">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#ex1" data-toggle="collapse" data-parent="#accordion">Frontend</a>
+				</h4>
+			</div>
+			<div id="ex1" class="panel-collapse collapse">
+				<div class="panel-body">
+					<ul>
+					  <li>HTML</li>
+					  <li>CSS</li>
+					  <li>Bootstrap</li>
+					  <li>React.js</li>
+					  <li>Angular.js</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			
+			<div class="panel panel-success">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#ex2" data-toggle="collapse" data-parent="#accordion">Backend</a>
+				</h4>
+			</div>
+			<div id="ex2" class="panel-collapse collapse">
+				<div class="panel-body">
+					<ul>
+					  <li>Database i.e. MongoDB, MySQL etc</li>
+					  <li>Server i.e. Nginx, Microsoft IIS</li>
+					  <li>Programming Languages i.e. Python, javascript etc</li>
+					  <li>API i.e. REST, SOAP etc</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="subjects/html.html">click for more</a>
+	</div>
+</div>
+</body>
+</html>

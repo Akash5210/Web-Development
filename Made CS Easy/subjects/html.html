@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		.subject{
+			border: 1px solid grey;
+			box-shadow: 0 0 10px rgba(0,0,0.2);
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		
+		<!--container-->
+		<div class="container">
+			
+			<!--container icons-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="/Made CS Easy.html" class="navbar-brand">Made CSE Easy</a>
+			</div>
+
+			<!--Navbar links-->
+			<div class="navbar-collapse collapse" id="nav1">
+				<ul class="nav navbar-nav ">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#section1">Languages <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Programming language</a>
+								<ul>
+									<li><a href="cpp.html">C++</a></li>
+									<li><a href="python.html">Python</a></li>
+									<li><a href="java.html">Java</a></li>
+									<li><a href="javascript.html">Javascript</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Web Development</a>
+								<ul>
+									<li><a href="html.html">HTML</a></li>
+									<li><a href="css.html">CSS</a></li>
+									<li><a href="bootstrap.html">Bootstrap</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</li>
+					<li><a href="os.html">Operating System</a></li>
+					<li><a href="dbms.html">DBMS</a></li>
+					<li><a href="quiz.html">Quizes</a></li>
+				</ul>
+
+				<!--for right side icon-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><form class="form-inline">
+  							<i class="fa fa-google" style="font-size:24px;padding-top:5px;"></i>
+  							<input class="form-control form-control-sm" type="text" placeholder="Google Search" style="padding-top: 5px;">
+						</form>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-print"></span> Print</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="subject">
+			<br><br>
+		<h2><b>HTML</b></h2>
+			<p>HTML is the standard markup language for Web pages.With HTML you can create your own Website. This tutorial follows the latest HTML5 standard. HTML is easy to learn - You will enjoy it!</p>
+			<br>
+		<p>
+			<h3>History of HTML</h3>HTML was first created by Tim Berners-Lee, Robert Cailliau, and others starting in 1989. It stands for Hyper Text Markup Language.<br>
+Hypertext means that the document contains links that allow the reader to jump to other places in the document or to another document altogether. The latest version is known as HTML5.<br>
+A Markup Language is a way that computers speak to each other to control how text is processed and presented. To do this HTML uses two things: tags and attributes.
+			</p>
+
+			<h3>What are Tags and Attributes?</h3>
+			<p>Tags and attributes are the basis of HTML.<br>
+They work together but perform different functions – it is worth investing 2 minutes in differentiating the two.
+</p><br>
+
+			<h3>What Are HTML Tags?</h3>
+			<p>Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. <br>
+
+Most tags must be opened < h1> and closed </ h1> in order to function.
+</p>
+			
+			<ul class="pager">
+				<li class="previous"><a href="#">Previous</a></li>
+				<li class="next"><a href="#">Next</a></li>
+			</ul>
+
+			<ul class="pagination"  style="position: relative;padding-left:450px ;">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+			<br>
+			<!--Bootstrap modal-->
+			
+		<!--model button-->
+		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal1">click for more</button>
+
+		<!--model-->
+		<div id="modal1" class="modal fade">
+			<div class="modal-dialog">
+				
+				<!--model content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">html.com</h4>
+					</div>
+
+					<div class="modal-body">
+						<p><a href="https://html.com/">HTML.com</a></p>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn-btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+	</div>
+</body>
+</html>
