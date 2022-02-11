@@ -1,0 +1,97 @@
+html{
+    font-size: 10px; 
+    font-family: sans-serif;
+}
+h1{
+    font-family: 'billabong';       /*Not working in browser so we have to provide a link for that*/
+    text-align: center;
+    font-size: 100px;
+    font-weight: 100;
+    margin: 20px 0;
+    letter-spacing: -5px;
+}
+@font-face {
+    font-family: 'billabong';
+    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg'); 
+}
+
+/* parent class and inside this .figure class is created */
+.photo-grid{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;                /* converted into multiple line without overlaping when screen size is decreased */
+}
+
+/* child class of .photo-grid class */
+.figure{
+    flex-basis: calc(33.333% - 40px);   /* use to calculate the value and apply the width length */
+    /* flex:1; */
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    flex-grow: 1;                       /* used if element not in same row then apply full width*/
+}
+
+.photo{
+    width: calc(100% + 40px);
+    margin: -20px 0 0 -20px;
+}
+
+.description{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.remove-image button{
+    border: 1px solid #d3d3d3;
+    background-color: white;
+    color: red;
+    padding:5px 40px;
+    font-weight: bold;
+    
+}
+.remove-image{
+    font-size: 15px;
+    text-align: center;
+}
+.add-icon{
+    display: table;
+    margin: 20px auto;
+    font-size: 100px;
+    border-radius: 100px;
+    padding: 0 30px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.form1{
+     margin: 0 auto;
+     padding: 45px;
+     max-width: 360px;
+     text-align: center;
+}
+.form1 input{
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    
+}
+.form1 button{
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(66, 66, 172);
+    border: none;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    cursor:pointer;
+
+}
+.form1 button:hover{
+    background-color: green;
+}
