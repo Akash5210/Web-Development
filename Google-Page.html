@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+    <style>
+        .nav-link:hover{
+            text-decoration: underline;
+        }
+        .duddle h1{
+            font-size: 6rem;
+        }
+        .duddle span{
+            margin:-15px;
+            padding: 0;
+        }
+        .search-box1 .input-group input{
+            border-radius: 50px !important;
+            height: 3.5rem;
+        }
+        #search1{
+            position: absolute;
+            z-index: 1;
+            margin: 17px 20px;
+        }
+        #microphone1{
+            position: absolute;
+            z-index: 1;
+            margin: 17px 600px;
+        }
+        .button-grp button{
+            background-color: rgb(245, 248, 250);
+            padding: 5px 13px;
+        /* }
+        .button-grp button:hover{
+            border: grey !important;
+        } */
+        a{
+            text-decoration: none;
+        }
+        footer{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(245, 248, 250);
+        }
+        .footer, .footer button{
+            color: grey;
+        }
+        .language a{
+            margin-right: 3px;
+            font-size:14px;
+        }
+        .country p{
+            padding-top: 12px;
+        }
+        .buttom-menu{
+            height: 45px;
+        }
+        .buttom-menu button{
+            border: none;
+        }
+    </style>
+
+</head>
+  <body>
+    <div>
+        <ul class="nav justify-content-end pt-2 px-3">
+            <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page" href="#">Gmail</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Images</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">...</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary px-4 pb-2 pt-1">Sign in</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="duddle mt-4 mb-5">
+            <h1 class="text-center">
+                <span class="text-primary">G</span>
+                <span class="text-danger">o</span>
+                <span class="text-warning">o</span>
+                <span class="text-primary">g</span>
+                <span class="text-success">l</span>
+                <span class="text-danger">e</span>
+            </h1>
+        </div>
+        <div class="row justify-content-md-center search-box1">
+            <div class="col-12 col-md-7">
+                <div class="input-group">
+                    <i class="fa fa-search" style="font-size:20px;color: grey;" id="search1"></i>
+                    <input type="text" class="form-control" id="googleSearch">
+                    <i class='fa fa-microphone' style="font-size:20px;color: grey;" id="microphone1"></i>
+                </div>
+            </div>
+        </div>
+        <div class="my-4 text-center button-grp">
+            <button class="btn me-1">Google Search</button>
+            <button class="btn ">I'm Feeling Lucky</button>
+        </div>
+
+        <div class="language text-center">
+            <p>Google offered in: <a href="">हिन्दी</a> 
+                <a href="">বাংলা</a>
+                <a href="">తెలుగు</a>
+                <a href="">मराठी</a>        
+                <a href="">தமிழ்</a>
+                <a href="">ગુજરાતી</a>
+                <a href="">ಕನ್ನಡ</a>
+                <a href="">മലയാളം</a>
+                <a href="">ਪੰਜਾਬੀ</a>
+            </p>
+        </div>
+    </div>
+    <footer class="footer fixed-bottom">
+        <div class="country ps-4 border-bottom">
+            <p>India</p>
+        </div>
+        <div class="buttom-menu ms-4 row">
+            <div class="left-menu text-left col-md-9">
+                <button class="btn">About</button>
+                <button class="btn">Advertising</button>
+                <button class="btn">Business</button>
+                <button class="btn">How Search Works</button>
+            </div>
+            <div class="right-menu col-md-3">
+                <button class="btn">Privacy</button>
+                <button class="btn">Terms</button>
+                <button class="btn">Settings</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
