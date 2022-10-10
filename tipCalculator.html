@@ -64,9 +64,14 @@
 
         let count = 1;
         
+        //if input are positive or whole number then only calculate the tip otherwise show N/A 'notapplicable' msg.
         const calTotalBill = (count)=> {
-            total.innerText = '$' + ((Number(bill.value) + (bill.value * tip.value)/100)/count).toFixed(2); 
+            if(bill.value>=0 && tip.value>=0)
+                total.innerText = '$' + ((Number(bill.value) + (bill.value * tip.value)/100)/count).toFixed(2); 
+            else 
+                total.innerText = 'N/A'; 
         }
+        
         input1.forEach(item => (
             item.onchange = ()=> calTotalBill(count)
         ))
